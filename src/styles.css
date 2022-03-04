@@ -1,0 +1,47 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #121212, #1b1a24, #212237, #252b4c, #263461, #203d6b, #164575, #004e7f, #00557b, #005a72, #005d67, #0e605b);
+}
+
+.title {
+    font-size: 5rem;
+    color: #fff;
+
+    animation: flipTitle 2s;
+}
+
+@keyframes flipTitle {
+        0%,
+        100% {
+          transform: rotate(0deg);
+          transform-origin: 50% 0;
+        }
+      
+        10% {
+          transform: rotate(2deg);
+        }
+      
+        20%,
+        40%,
+        60% {
+          transform: rotate(-4deg);
+        }
+      
+        30%,
+        50%,
+        70% {
+          transform: rotate(4deg);
+        }
+      
+        80% {
+          transform: rotate(-2deg);
+        }
+      
+        90% {
+          transform: rotate(2deg);
+        }
+      }
